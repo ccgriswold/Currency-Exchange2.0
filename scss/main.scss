@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-image: url('http://www.josiahland.com/wp-content/uploads/2014/07/Cash-Money1.jpg');
+
+    background-position: absolute;
+}
+
+header {
+    padding: 10px;
+    background-color: teal;
+}
+
+main {
+    padding: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    margin: 8px 0;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color: #ed731a;
+    font-size: 3em;
+    align-self: center;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: normal;
+    color: #bbb;
+}
+
+h3 {
+    font-size: 1.8em;
+    color: yellow;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ededed;
+}
+
+.controls {
+    margin: 30px 0;
+    button {
+        height: 60px;
+        width: 200px;
+        font-size: 1.4em;
+    }
+}
