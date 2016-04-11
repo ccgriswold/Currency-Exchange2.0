@@ -3,6 +3,7 @@ module.exports = Backbone.Model.extend({
     price: 500,
   },
   initialize: function(){
+    var self = this;
     var request = new XMLHttpRequest();
     function trinketPrice(){
       //make Trinkets money ajax request
@@ -10,7 +11,7 @@ module.exports = Backbone.Model.extend({
       request.onload= function(){
         var coinPrice = JSON.parse(request.responseText);
         //Update the dom
-        this.set('price', Math.round((coinPrice.price*100)/100));
+        self.set('price', Math.round((coinPrice.price*100)/100));
       };
     request.send();
   }

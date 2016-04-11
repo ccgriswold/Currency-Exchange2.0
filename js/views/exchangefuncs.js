@@ -1,6 +1,5 @@
 module.exports = Backbone.View.extend({
   initialize: function(){
-    this.setPrice();
     this.model.on('change', this.render, this);
   },
   render: function(){
